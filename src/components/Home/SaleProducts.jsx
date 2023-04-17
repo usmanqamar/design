@@ -85,7 +85,7 @@ const SaleProducts = () => {
           <Title>Best Sale Product</Title>
         </Box>
         <Box width={1 / 2} textAlign={'right'}>
-          <Link>See more</Link>
+          <Link href={'#'}>See more</Link>
         </Box>
       </Box>
       <List />
