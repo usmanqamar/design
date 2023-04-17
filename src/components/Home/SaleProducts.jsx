@@ -69,18 +69,26 @@ const List = () => {
 };
 const SaleProducts = () => {
   return (
-    <Box mt={2} sx={{ background: 'linear-gradient( #f9f9f9, #fff)' }}>
-      <Box pt={3}>
-        <Box display={'flex'} justifyContent={'space-between'}>
-          <Box width={1 / 2}>
-            <Title>Best Sale Product</Title>
-          </Box>
-          <Box width={1 / 2} textAlign={'right'}>
-            <Link>See more</Link>
-          </Box>
+    <Box pt={2}>
+      <Box
+        sx={{ background: 'linear-gradient( #f9f9f9, #fff)' }}
+        position={'sticky'}
+        height={40}
+        top={72}
+        mx={-2}
+        p={2}
+        zIndex={2}
+        display={'flex'}
+        bgcolor={'white'}
+        justifyContent={'space-between'}>
+        <Box width={1 / 2}>
+          <Title>Best Sale Product</Title>
         </Box>
-        <List />
+        <Box width={1 / 2} textAlign={'right'}>
+          <Link>See more</Link>
+        </Box>
       </Box>
+      <List />
     </Box>
   );
 };

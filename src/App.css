@@ -25,7 +25,15 @@
 .App-link {
   color: #61dafb;
 }
+.header-scroll {
+  background: white;
+  animation: move 0.5s;
 
+}
+@keyframes move {
+  from {background-color: inherit;}
+  to {background-color: white;}
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

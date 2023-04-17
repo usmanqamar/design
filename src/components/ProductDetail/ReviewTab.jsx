@@ -7,6 +7,7 @@ import {
   Grid,
   LinearProgress,
   MenuItem,
+  Pagination,
   Rating,
   Select
 } from '@mui/material';
@@ -154,6 +155,9 @@ const AboutTab = () => {
             <BodyText2>According to my expectation this is good</BodyText2>
           </Box>
         </Box>
+      </Box>
+      <Box my={2}>
+        <Pagination count={5} color="primary" />
       </Box>
     </Box>
   );

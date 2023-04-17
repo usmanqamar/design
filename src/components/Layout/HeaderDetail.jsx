@@ -17,7 +17,7 @@ const HeaderDetail = () => {
             <ArrowBackIosNewOutlinedIcon fontSize={'small'} />
           </Link>
         </Box>
-        <Box width={1 / 3} gap={3} alignItems={'center'} display={'flex'}>
+        <Box width={1 / 3} gap={3} alignItems={'center'} display={'flex'} mr={1}>
           <FavoriteOutlinedIcon color={'error'} />
 
           <ShareOutlinedIcon />

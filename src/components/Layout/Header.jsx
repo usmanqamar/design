@@ -4,8 +4,21 @@ import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 import ShoppingBasketOutlinedIcon from '@mui/icons-material/ShoppingBasketOutlined';
 import MessageOutlinedIcon from '@mui/icons-material/MessageOutlined';
 const Header = () => {
+  const [scroll, setScroll] = React.useState(false);
+  React.useEffect(() => {
+    window.addEventListener('scroll', () => {
+      setScroll(window.scrollY > 50);
+    });
+  }, []);
   return (
-    <Box position={'absolute'} top={30}>
+    <Box
+      top={0}
+      className={scroll ? 'header-scroll' : ''}
+      maxWidth={'sm'}
+      width={1}
+      position={'fixed'}
+      p={2}
+      zIndex={2}>
       <Box display={'flex'} gap={2} alignItems={'center'} justifyContent={'space-between'}>
         <Box width={2 / 3}>
           <TextField

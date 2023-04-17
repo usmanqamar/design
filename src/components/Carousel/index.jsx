@@ -32,7 +32,7 @@ const HomeCarousel = () => {
         showArrows={false}
         emulateTouch={true}
         useKeyboardArrows={true}
-        autoPlay={false}
+        autoPlay={true}
         infiniteLoop={true}
         onChange={setSelectedIndex}
         showThumbs={false}

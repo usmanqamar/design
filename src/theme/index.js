@@ -49,7 +49,7 @@ export const theme = createTheme({
     MuiBadge: {
       styleOverrides: {
         badge: {
-          borderRadius: 2
+          borderRadius: 3
         }
       }
     },

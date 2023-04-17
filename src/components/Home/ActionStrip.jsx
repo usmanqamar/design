@@ -18,7 +18,7 @@ const IconWrapper = ({ children, label }) => (
 );
 const ActionStrip = () => {
   return (
-    <Box display={'flex'} pt={1.5} color={'text.secondary'} justifyContent={'space-between'}>
+    <Box display={'flex'} pt={1.5} mb={3} color={'text.secondary'} justifyContent={'space-between'}>
       <IconWrapper label={'Category'}>
         <CategoryOutlinedIcon />
       </IconWrapper>

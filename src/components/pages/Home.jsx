@@ -10,19 +10,17 @@ import WithAnimate from '../Layout/WithAnimate';
 
 const Home = () => {
   return (
-    <WithAnimate key={1}>
+    <WithAnimate>
       <Box position={'relative'}>
         <HomeCarousel />
       </Box>
 
       <Container maxWidth="sm" disableGutters={true} sx={{ marginBottom: 4 }}>
-        <WithPadding>
-          <Header />
-        </WithPadding>
+        <Header />
         <WithPadding>
           <ActionStrip />
         </WithPadding>
-        <WithPadding sx={{ background: 'linear-gradient( #f9f9f9, #fff)' }}>
+        <WithPadding>
           <SaleProducts />
         </WithPadding>
         <FixedBottomNavigation />
