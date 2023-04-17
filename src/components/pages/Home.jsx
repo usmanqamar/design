@@ -7,25 +7,27 @@ import ActionStrip from '../Home/ActionStrip';
 import SaleProducts from '../Home/SaleProducts';
 import FixedBottomNavigation from '../Layout/Footer';
 import WithAnimate from '../Layout/WithAnimate';
+import WithLayout from '../Layout/WithLayout';
 
 const Home = () => {
   return (
-    <WithAnimate>
-      <Box position={'relative'}>
-        <HomeCarousel />
-      </Box>
+    <WithLayout footer={<FixedBottomNavigation />}>
+      <WithAnimate>
+        <Box position={'relative'}>
+          <HomeCarousel />
+        </Box>
 
-      <Container maxWidth="sm" disableGutters={true} sx={{ marginBottom: 4 }}>
-        <Header />
-        <WithPadding>
-          <ActionStrip />
-        </WithPadding>
-        <WithPadding>
-          <SaleProducts />
-        </WithPadding>
-        <FixedBottomNavigation />
-      </Container>
-    </WithAnimate>
+        <Container maxWidth="sm" disableGutters={true} sx={{ marginBottom: 4 }}>
+          <Header />
+          <WithPadding>
+            <ActionStrip />
+          </WithPadding>
+          <WithPadding>
+            <SaleProducts />
+          </WithPadding>
+        </Container>
+      </WithAnimate>
+    </WithLayout>
   );
 };
 

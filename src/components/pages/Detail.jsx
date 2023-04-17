@@ -13,18 +13,20 @@ import Info from '../ProductDetail/Info';
 import DetailTabs from '../ProductDetail/DetailTabs';
 import HeaderDetail from '../Layout/HeaderDetail';
 import DetailCarousel from '../Carousel/DetailCarousel';
+import WithLayout from '../Layout/WithLayout';
 
 const Detail = () => {
   return (
-    <WithAnimate key={2}>
-      <Container maxWidth="sm" sx={{ marginBottom: 4 }}>
-        <HeaderDetail />
-        <DetailCarousel />
-        <Info />
-        <DetailTabs />
-        <DetailFooter />
-      </Container>
-    </WithAnimate>
+    <WithLayout footer={<DetailFooter />}>
+      <WithAnimate key={2}>
+        <Container maxWidth="sm" sx={{ marginBottom: 4 }}>
+          <HeaderDetail />
+          <DetailCarousel />
+          <Info />
+          <DetailTabs />
+        </Container>
+      </WithAnimate>
+    </WithLayout>
   );
 };
 
